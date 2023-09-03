@@ -1,0 +1,80 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("backgroun.jpg");
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    gap: 10px 0;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+    width: 100vw;
+    display: flex;
+}
+
+.container{
+    background-color: rgb(108, 38, 136);
+    position: relative;
+    max-width: 80vw;
+    padding: 20px;
+    box-shadow: 0px 20px 50px rgba(87, 11, 16, 0.5);
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px 20px;
+
+}
+
+.container::after{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 120%;
+    z-index: -1;
+    top: -10%;
+    left: 10%;
+    background-color: rgb(255, 215, 215);
+}
+
+.container p{
+    color: white;
+    line-height: 2;
+    font-family: sans-serif;
+    font-family: cursive;
+    font-size: 25px;
+}
+
+.container h3{
+    font-weight: 600;
+    margin: 20px 0 40px 0;
+    text-transform: capitalize;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+    padding: 15px 45px;
+    font-weight: 70;
+    font-size: medium;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.5s;
+
+}
+
+button:hover{
+    transition: 0.5s;
+    padding-block: 20px;
+    background-color: rgb(184, 95, 205);
+    color: white;
+}
